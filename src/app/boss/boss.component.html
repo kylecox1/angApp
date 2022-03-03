@@ -1,0 +1,9 @@
+<p>Click to show spoilers for the boss!</p>
+<button (click)="toggleSpoiler()">{{buttonText}}</button>
+<div *ngIf="showSpoiler">
+<br>
+<h3>Boss Details</h3>
+<p>The {{name}} is super scary! But the real trick
+    to defeating this demon of the fire pit is to 
+    just fight him for 3,000 lifetimes. Good luck!
+</p>

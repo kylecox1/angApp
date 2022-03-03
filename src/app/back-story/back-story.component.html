@@ -1,0 +1,35 @@
+<hr>
+<label for="homeTown">Home Town:</label>
+<input name="homeTown" [(ngModel)]="homeTown">
+<br>
+<label for="profession">Profession</label>
+<input name="profession" [(ngModel)]="profession">
+<br>
+<label for="tragicEvent">Tragic Event</label>
+<input name="tragicEvent" [(ngModel)]="tragicEvent">
+<br>
+<label for="lifeDream">Life Dream</label>
+<input name="lifeDream" [(ngModel)]="lifeDream">
+<br>
+<label for="sideKick">Side Kick</label>
+<input name="sideKick" [(ngModel)]="sideKick">
+<br>
+<label for="costume">Costume</label>
+<input name="costume" [(ngModel)]="costume">
+<br>
+<label for="weapon">Weapon</label>
+<input name="weapon" [(ngModel)]="weapon">
+
+<button (click)="toggleStory()">{{buttonText}}</button>
+<div *ngIf="showStory">
+<br>
+<h3>Back Story</h3>
+<p>I have spent my whole life working as 
+    a {{profession}} in {{homeTown}}. However, 
+    I am torn apart because {{tragicEvent}}. 
+    One day, I plan on acheiving my 
+    lifelong dream to {{lifeDream}}! Daily, I put on my freshly
+    pressed {{costume}} and go out to face the world weilding 
+    my trusty {{weapon}}!
+</p>
+</div>

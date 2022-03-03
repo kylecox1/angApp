@@ -1,0 +1,7 @@
+<h1>Dungeon Details for {{name | uppercase}}</h1>
+<h4>Monsters present:</h4>
+<li *ngFor="let monster of monsters">{{monster | lowercase}}</li>
+<br>
+<p>Total treasure: {{treasureAmount | currency}}</p>
+<p>Difficulty: {{difficultyPercent | percent}}</p>
+<app-boss name="The Bulrogg"></app-boss>

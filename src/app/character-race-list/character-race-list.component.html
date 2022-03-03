@@ -1,0 +1,7 @@
+<div>
+    <h2>Races</h2>
+    <li *ngFor="let race of characterRaces.results">
+        <h3>{{race.name}}</h3>
+        <app-character-race-details name={{race.index}}></app-character-race-details>
+    </li>
+</div>
